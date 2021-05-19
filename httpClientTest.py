@@ -7,11 +7,4 @@ print("Status: {} and reason: {}".format(response.status, response.reason))
 print(response.read().decode())
 print(response.getheaders())
 
-for x in range(6):
-    response = connection.getresponse()
-    print("Status: {} and reason: {}".format(response.status, response.reason))
-    print(response.read().decode())
-    print(response.getheaders())
-
 connection.close()
-
